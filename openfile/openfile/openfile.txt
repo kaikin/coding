@@ -1,0 +1,407 @@
+items: 
+  id: 0
+  name: "Root"
+  plugin: Base
+  class: RootItem
+  children: 
+    - 
+      id: 1
+      name: "World"
+      plugin: Body
+      class: WorldItem
+      data: 
+        collisionDetection: true
+      children: 
+        - 
+          id: 2
+          name: "Floor"
+          plugin: Body
+          class: BodyItem
+          data: 
+            modelFile: "${SHARE}/model/misc/smallfloor.wrl"
+            currentBaseLink: ""
+            rootPosition: [  0.000000,  0.000000, -0.010000 ]
+            rootAttitude: [ 
+               1.000000,  0.000000,  0.000000, 
+               0.000000,  1.000000,  0.000000, 
+               0.000000,  0.000000,  1.000000 ]
+            jointPositions: [  ]
+            initialRootPosition: [  0.000000,  0.000000, -0.010000 ]
+            initialRootAttitude: [ 
+               1.000000,  0.000000,  0.000000, 
+               0.000000,  1.000000,  0.000000, 
+               0.000000,  0.000000,  1.000000 ]
+            initialJointPositions: [  ]
+            zmp: [  0.000000,  0.000000,  0.000000 ]
+            selfCollisionDetection: false
+        - 
+          id: 3
+          name: "GR001"
+          plugin: Body
+          class: BodyItem
+          data: 
+            modelFile: "${SHARE}/model/GR001/GR001.yaml"
+            currentBaseLink: "L_ANKLE_R"
+            rootPosition: [  0.071056, -0.031891,  0.152732 ]
+            rootAttitude: [ 
+               1.000000, -0.000000, -0.000000, 
+               0.000000,  1.000000,  0.000000, 
+              -0.000000, -0.000000,  1.000000 ]
+            jointPositions: [ 
+              -0.259756, -0.283228,  0.281480, -0.525031, -0.243551, -0.283228, -0.156373, -0.281749, -0.936018, 
+               1.004085,  0.068067, -0.281749,  0.000000,  0.000000,  0.000000, -0.523599,  0.000000,  0.000000, 
+               0.523599,  0.000000 ]
+            initialRootPosition: [  0.000000,  0.000000,  0.160500 ]
+            initialRootAttitude: [ 
+               1.000000,  0.000000,  0.000000, 
+               0.000000,  1.000000,  0.000000, 
+               0.000000,  0.000000,  1.000000 ]
+            initialJointPositions: [ 
+               0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000, 
+               0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000,  0.000000, 
+               0.000000,  0.000000 ]
+            zmp: [  0.104207, -0.013137,  0.000000 ]
+            selfCollisionDetection: true
+          children: 
+            - 
+              id: 4
+              name: "fin 1"
+              plugin: PoseSeq
+              class: PoseSeqItem
+              data: 
+                filename: "fin 1.pseq"
+                format: POSE-SEQ-YAML
+            - 
+              id: 5
+              name: "fin 2"
+              plugin: PoseSeq
+              class: PoseSeqItem
+              data: 
+                filename: "fin 2.pseq"
+                format: POSE-SEQ-YAML
+            - 
+              id: 6
+              name: "fin 3"
+              plugin: PoseSeq
+              class: PoseSeqItem
+              data: 
+                filename: "fin 3.pseq"
+                format: POSE-SEQ-YAML
+            - 
+              id: 7
+              name: "fin 4"
+              plugin: PoseSeq
+              class: PoseSeqItem
+              data: 
+                filename: "fin 4.pseq"
+                format: POSE-SEQ-YAML
+            - 
+              id: 8
+              name: "fin 5"
+              plugin: PoseSeq
+              class: PoseSeqItem
+              data: 
+                filename: "fin 5.pseq"
+                format: POSE-SEQ-YAML
+            - 
+              id: 9
+              name: "fin 6"
+              plugin: PoseSeq
+              class: PoseSeqItem
+              data: 
+                filename: "fin 6.pseq"
+                format: POSE-SEQ-YAML
+        - 
+          id: 10
+          name: "AISTSimulator"
+          plugin: Body
+          class: AISTSimulatorItem
+          data: 
+            realtimeSync: false
+            recordingMode: TimeBar range
+            onlyActiveControlPeriod: true
+            timeLength: 60
+            allLinkPositionOutputMode: false
+            dynamicsMode: High-gain dynamics
+            integrationMode: Runge Kutta
+            gravity: [ 0, 0, -9.80665 ]
+            staticFriction: 1
+            slipFriction: 1
+            cullingThresh: 0.005
+            errorCriterion: 0.001
+            maxNumIterations: 1000
+            contactCorrectionDepth: 0.0001
+            contactCorrectionVelocityRatio: 30
+            2Dmode: false
+views: 
+  "Items": 
+    checked: [ 3, 5, 6, 7, 8, 9 ]
+    expanded: [ 1, 3, 4, [ 4, "motion" ], 5, [ 5, "motion" ], 6, [ 6, "motion" ], 7, [ 7, "motion" ], 8, [ 8, "motion" ], 9, [ 9, "motion" ] ]
+  "Scene": 
+    mode: edit
+    floorGird: true
+    collisions: true
+    shadow: false
+    floorGridSpan: 2
+    floorGridInterval: 0.05
+    hiPriorityRendering: false
+    camera: 
+      projection: perspetive
+      perspective: [ 40, 1.83982, 0.000778595, 1.58833 ]
+      ortho: [ -1.8953, 1.8953, -1.31263, 1.31263, -2.12922, 2.50346 ]
+      eye: [ 0.539258, -0.020615, 0.15691 ]
+      center: [ -0.442361, -0.00456025, -0.0332656 ]
+      up: [ -0.19015, 0.00310986, 0.98175 ]
+  "Multi Value Seq": 
+    mode: view
+    editMode: freeLine
+    original: true
+    velocity: false
+    acceleration: false
+    limits: true
+    grid: true
+    gridWidth: 0.2
+    gridHeight: 0.2
+    lineWidth: 1
+    rulers: false
+    sync: true
+    controlPointStep: 1
+    controlPointOffset: 0
+    controlPointHeighlight: false
+    scrollMode: continuous
+    lower: -10
+    upper: 10
+  "Multi SE3 Seq": 
+    mode: view
+    editMode: freeLine
+    original: true
+    velocity: false
+    acceleration: false
+    limits: true
+    grid: true
+    gridWidth: 0.2
+    gridHeight: 0.2
+    lineWidth: 1
+    rulers: false
+    sync: true
+    controlPointStep: 1
+    controlPointOffset: 0
+    controlPointHeighlight: false
+    scrollMode: continuous
+    lower: -10
+    upper: 10
+    visibleElements: [ 0, 1, 2 ]
+  "Links": 
+    listingMode: "link list"
+    currentBodyItem: 3
+    bodyItems: 
+      - 
+        id: 3
+        selectedLinks: [ 0 ]
+  "Body / Link": 
+    showRotationMatrix: false
+  "Joint Sliders": 
+    showAllJoints: true
+    jointId: true
+    name: true
+    numColumns: 1
+    spinBox: true
+    slider: true
+    labelOnLeft: true
+    currentBodyItem: 3
+  "Joint Trajectories": 
+    mode: view
+    editMode: freeLine
+    original: true
+    velocity: false
+    acceleration: false
+    limits: true
+    grid: true
+    gridWidth: 0.2
+    gridHeight: 0.2
+    lineWidth: 1
+    rulers: false
+    sync: true
+    controlPointStep: 1
+    controlPointOffset: 0
+    controlPointHeighlight: false
+    scrollMode: continuous
+    lower: -10
+    upper: 10
+  "Multi Affine3 Seq": 
+    mode: view
+    editMode: freeLine
+    original: true
+    velocity: false
+    acceleration: false
+    limits: true
+    grid: true
+    gridWidth: 0.2
+    gridHeight: 0.2
+    lineWidth: 1
+    rulers: false
+    sync: true
+    controlPointStep: 1
+    controlPointOffset: 0
+    controlPointHeighlight: false
+    scrollMode: continuous
+    lower: -10
+    upper: 10
+    visibleElements: [ 0, 1, 2 ]
+  "Pose Roll": 
+    currentPoseSeqItem: 7
+    defaultTransitionTime: 0
+    updateAll: true
+    autoUpdate: false
+    timeSync: true
+    listingMode: "part tree"
+    bodyItems: 
+      - 
+        id: 3
+        expandedParts: [ "LEGS", "LOWER-BODY", "Whole Body" ]
+    timeLength: 10
+    showLipSync: false
+    gridInterval: 1
+toolbars: 
+  "TimeBar": 
+    minTime: 0
+    maxTime: 30
+    frameRate: 100
+    playbackFrameRate: 100
+    currentTime: 3.47
+    speedScale: 1
+  "BodyMotionGenerationBar": 
+    balancer: true
+    autoGeneration: false
+    timeScaleRatio: 1
+    preInitialDuration: 1
+    postFinalDuration: 1
+    onlyTimeBarRange: true
+    makeNewBodyItem: true
+    stealthyStepMode: false
+    stealthyHeightRatioThresh: 2
+    flatLiftingHeight: 0.005
+    flatLandingHeight: 0.005
+    impactReductionHeight: 0.005
+    impactReductionTime: 0.04
+    autoZmp: true
+    minZmpTransitionTime: 0.1
+    zmpCenteringTimeThresh: 0.03
+    zmpTimeMarginBeforeLiftingSpin: 0
+    allLinkPositions: true
+    lipSyncMix: false
+    timeToStartBalancer: 0
+    balancerIterations: 2
+    plainBalancerMode: false
+    boundaryConditionType: position
+    boundarySmootherType: off
+    boundarySmootherTime: 0.5
+    boundaryCmAdjustment: false
+    boundaryCmAdjustmentTime: 1
+    waistHeightRelaxation: false
+    gravity: 9.8
+    dynamicsTimeRatio: 1
+  "BodyBar": 
+    current: 3
+    stanceWidth: 0.15
+  "KinematicsBar": 
+    mode: AUTO
+    attitude: false
+    penetrationBlock: true
+    collisionLinkHighlight: true
+    snapDistance: 0.025
+    penetrationBlockDepth: 0.0001
+    lazyCollisionDetectionMode: true
+Base: 
+  "MovieGenerator": 
+    directory: 
+    basename: scene
+    begin: 0
+    fps: 30
+    width: 640
+    heiht: 480
+Body: 
+  "KinematicFaultChecker": 
+    checkJointPositions: true
+    angleMargin: 0
+    translationMargin: 0
+    checkJointVelocities: true
+    velocityLimitRatio: 100
+    targetJoints: all
+    checkSelfCollisions: true
+    onlyTimeBarRange: false
+  "SceneBodyManager": 
+    sceneBodies: 
+      - 
+        bodyItem: 3
+        editable: true
+        centerOfMass: true
+        zmp: true
+      - 
+        bodyItem: 2
+        editable: false
+        centerOfMass: false
+        zmp: false
+layoutOfViews: 
+  type: splitter
+  orientation: horizontal
+  sizes: 
+    - 251
+    - 1184
+  children: 
+    - 
+      type: splitter
+      orientation: vertical
+      sizes: 
+        - 352
+        - 352
+      children: 
+        - 
+          type: pane
+          views: [ "Items", "Multi SE3 Seq", "Joint Trajectories" ]
+          current: "Items"
+        - 
+          type: pane
+          views: [ "Property", "Links" ]
+          current: "Links"
+    - 
+      type: splitter
+      orientation: vertical
+      sizes: 
+        - 463
+        - 241
+      children: 
+        - 
+          type: splitter
+          orientation: horizontal
+          sizes: 
+            - 369
+            - 810
+          children: 
+            - 
+              type: pane
+              views: [ "Body / Link", "Joint Sliders" ]
+              current: "Body / Link"
+            - 
+              type: pane
+              views: [ "Scene" ]
+              current: "Scene"
+        - 
+          type: pane
+          views: [ "Message", "Multi Value Seq", "Multi Affine3 Seq", "Pose Roll" ]
+          current: "Pose Roll"
+layoutOfToolBars: 
+  rows: 
+    - 
+      - { name: "FileBar", x: 0, priority: 0 }
+      - { name: "TimeBar", x: 48, priority: 0 }
+      - { name: "GRobotBar", x: 1030, priority: 1 }
+      - { name: "SceneBar", x: 1140, priority: 2 }
+    - 
+      - { name: "BodyMotionGenerationBar", x: 2, priority: 1 }
+      - { name: "GraphBar", x: 190, priority: 2 }
+      - { name: "BodyBar", x: 373, priority: 3 }
+      - { name: "SimulationBar", x: 955, priority: 0 }
+      - { name: "KinematicsBar", x: 1141, priority: 4 }
+    - 
+      - { name: "Sample1", x: 0, priority: 0 }

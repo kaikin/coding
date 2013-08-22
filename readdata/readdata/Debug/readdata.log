@@ -1,0 +1,16 @@
+﻿已經開始建置於 8/1/2013 3:03:12 PM。
+節點 2 (Build 目標) 上的專案 "c:\Users\Mac\documents\visual studio 2012\Projects\readdata\readdata\readdata.vcxproj"。
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\readdata.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+  stdafx.cpp
+  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\readdata.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt readdata.cpp
+  readdata.cpp
+Link:
+  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\mac\documents\visual studio 2012\Projects\readdata\Debug\readdata.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\mac\documents\visual studio 2012\Projects\readdata\Debug\readdata.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\mac\documents\visual studio 2012\Projects\readdata\Debug\readdata.lib" /MACHINE:X86 Debug\readdata.obj
+  Debug\stdafx.obj
+  readdata.vcxproj -> c:\users\mac\documents\visual studio 2012\Projects\readdata\Debug\readdata.exe
+專案 "c:\Users\Mac\documents\visual studio 2012\Projects\readdata\readdata\readdata.vcxproj" (Build 目標) 建置完成。
+
+建置成功。
+
+經過時間 00:00:01.53

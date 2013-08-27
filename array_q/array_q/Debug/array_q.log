@@ -1,0 +1,15 @@
+﻿已經開始建置於 8/27/2013 1:22:28 PM。
+節點 2 (Build 目標) 上的專案 "C:\Users\Mac\Dropbox\Source Code\Windows_VS\array_q\array_q\array_q.vcxproj"。
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\array_q.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt array_q.cpp
+  array_q.cpp
+c:\users\mac\dropbox\source code\windows_vs\array_q\array_q\array_q.cpp(18): error C2146: 語法錯誤 : 遺漏 ';' (在識別項 '_value' 之前)
+c:\users\mac\dropbox\source code\windows_vs\array_q\array_q\array_q.cpp(18): error C2065: '_value' : 未宣告的識別項
+c:\users\mac\dropbox\source code\windows_vs\array_q\array_q\array_q.cpp(19): error C2146: 語法錯誤 : 遺漏 ';' (在識別項 '_k' 之前)
+c:\users\mac\dropbox\source code\windows_vs\array_q\array_q\array_q.cpp(19): error C2065: '_k' : 未宣告的識別項
+c:\users\mac\dropbox\source code\windows_vs\array_q\array_q\array_q.cpp(24): error C2040: 'array' : 'float [20]' 和 'int' 的間接取值層級不同
+專案 "C:\Users\Mac\Dropbox\Source Code\Windows_VS\array_q\array_q\array_q.vcxproj" (Build 目標) 建置完成 -- 失敗。
+
+建置失敗。
+
+經過時間 00:00:04.50
